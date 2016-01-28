@@ -1,0 +1,13 @@
+<web-app id="tms-app-web-1.0-SNAPSHOT">
+    <jsp fast-jstl="false"/>
+
+    <!--database>
+        <jndi-name>jdbc/appfuse</jndi-name>
+        <driver type="oracle.jdbc.OracleDriver">
+            <url>jdbc:oracle:thin:@192.168.5.188:1521:orcl</url>
+            <user>lms_app</user>
+            <password>lms_app</password>
+        </driver>
+    </database-->
+</web-app>
+
