@@ -83,8 +83,7 @@ public class User extends BaseObject implements Serializable, UserDetails {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQUENCE_GENERATOR") 
-    @SequenceGenerator(name = "SEQUENCE_GENERATOR", allocationSize = 1, sequenceName = "USER_SEQ")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @DocumentId
     public Long getId() {
         return id;

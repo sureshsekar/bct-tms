@@ -3,10 +3,10 @@
 
     <!--database>
         <jndi-name>jdbc/appfuse</jndi-name>
-        <driver type="oracle.jdbc.OracleDriver">
-            <url>jdbc:oracle:thin:@192.168.5.188:1521:orcl</url>
-            <user>lms_app</user>
-            <password>lms_app</password>
+        <driver type="com.mysql.jdbc.Driver">
+            <url>jdbc:mysql://localhost/tms_app?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</url>
+            <user>root</user>
+            <password>root</password>
         </driver>
     </database-->
 </web-app>

@@ -127,6 +127,12 @@
             <artifactId>${jdbc.artifactId}</artifactId>
             <version>${jdbc.version}</version>
         </dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.2.0</version>
+		</dependency>
+        
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -420,12 +426,12 @@
     <properties>
         <!-- Application settings -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <copyright.year>2012</copyright.year>
+        <copyright.year>2015</copyright.year>
         <dao.framework>hibernate</dao.framework>
         <web.framework>struts</web.framework>
         <amp.genericCore>true</amp.genericCore>
         <amp.fullSource>true</amp.fullSource>
-        <db.name>lms_app</db.name>
+        <db.name>tms_app</db.name>
 
         <!-- Framework dependency versions -->
         <appfuse.version>2.2.1</appfuse.version>
@@ -459,8 +465,10 @@
         -->
         
 	    <!-- Database settings -->
+	    <!-- 
 		<dbunit.dataTypeFactoryName>org.dbunit.ext.oracle.OracleDataTypeFactory</dbunit.dataTypeFactoryName>
-		<dbunit.schema>SYSTEM</dbunit.schema> <!-- Make sure to capitalize the schema name -->
+		<dbunit.schema>SYSTEM</dbunit.schema> --> <!-- Make sure to capitalize the schema name -->
+		<!-- 
 		<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
 		<hibernate.dialect>org.hibernate.dialect.Oracle10gDialect</hibernate.dialect>
 		<jdbc.groupId>com.oracle</jdbc.groupId>
@@ -469,8 +477,8 @@
 		<jdbc.driverClassName>oracle.jdbc.OracleDriver</jdbc.driverClassName>
 		<jdbc.url>jdbc:oracle:thin:@192.168.5.188:1521:orcl</jdbc.url>
 		<jdbc.username>lms_app</jdbc.username>
-		<jdbc.password>lms_app</jdbc.password>
-        <!-- 
+		<jdbc.password>lms_app</jdbc.password>  -->
+         
         <dbunit.dataTypeFactoryName>org.dbunit.ext.mysql.MySqlDataTypeFactory</dbunit.dataTypeFactoryName>
         <dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
         <hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
@@ -480,7 +488,7 @@
         <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
         <jdbc.url>jdbc:mysql://localhost/${db.name}?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true</jdbc.url>
         <jdbc.username>root</jdbc.username>
-        <jdbc.password>root</jdbc.password> -->
+        <jdbc.password>root</jdbc.password> 
 
         <!-- Properties calculated by AppFuse when running full-source plugin -->
         <aspectj.version>1.6.10</aspectj.version>

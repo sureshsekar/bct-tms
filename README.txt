@@ -1,7 +1,7 @@
-AppFuse Modular Struts 2 Archetype
+TMS Modular Struts 2 Archetype
 --------------------------------------------------------------------------------
 If you're reading this then you've created your new project using Maven and
-lms-app.  You have only created the shell of an AppFuse Java EE
+tms-app.  You have only created the shell of an TMS Java EE
 application.  The project object model (pom) is defined in the file pom.xml.
 The application is ready to run as a web application. The pom.xml file is
 pre-defined with Hibernate as a persistence model and Struts 2 as the web
@@ -24,7 +24,4 @@ To get started, complete the following steps:
 
 4. View the application at http://localhost:8080.
 
-5. More information can be found at:
-
-    http://appfuse.org/display/APF/AppFuse+QuickStart
 
